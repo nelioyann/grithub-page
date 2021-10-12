@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    include ../partials/head.pug
+    include ../partials/body.pug
+        include ../partials/header.pug
+        main.barba-container(data-barba="container" data-barba-namespace=title)
+            h1 #{title}
+            p #{description}
+            form.flex.fd-c.gap(name="ideas", action="/submitted.html", autocomplete="off", netlify)
+                fieldset.animate-fade-up.borderius
+                    legend General Info
+                    .responsive-grid-m.gap
+                        label.flex.fd-c(for="subject")
+                            span.margin.margin-y Subject
+                                span.primary *
+                            input#subject.borderius.shadow.padding(type="text", name="subject", placeholder="ex: Flashcard App", required)
+                        label.flex.fd-c(for="user")
+                            span.margin.margin-y Username
+                            input.shadow#user.borderius.padding(type="text", name="user", placeholder="@anonymous")
+                fieldset.margin-y.margin-m.animate-fade-up.borderius
+                    legend Project Details
+                    label.flex.fd-c(for="description")
+                        span.margin.margin-y Description
+                            span.primary *
+                        textarea.shadow.borderius#description(name="description",  rows="10", required) 
+                button.pointer.animate-fade-up.btn.btn-primary.margin-m.margin-y.borderius(type="submit") Submit
+        include ../partials/footer.pug
+    include ../partials/scripts.pug
+    

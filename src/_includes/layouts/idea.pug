@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    include ../partials/head.pug
+    include ../partials/body.pug
+        include ../partials/header.pug
+        main.barba-container(data-barba="container" data-barba-namespace=title)
+            div.margin-m.margin-y
+                a.flex.gap.bg-accent.padding-m.borderius.icon-wrapper.shadow.hover-clickable(href="/ideas")
+                    include ../partials/allSVG.pug
+                    span See All
+            div.animate-fade-up
+                h1 #{title}
+                if featuredImage == "/images/uploads/transparent.png"
+                    .card__image.bg-boiler(data-title=title)
+                        img(src=featuredImage, alt=title)
+                else 
+                    .card__image
+                        img(src=featuredImage, alt=title)
+                
+                p #{description}
+                div !{content}
+            //- .related 
+            //-     for idea, i in collections.idea
+        include ../partials/footer.pug
+    include ../partials/scripts.pug
+
+//- #{content | safe}

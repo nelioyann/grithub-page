@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+    include ../partials/head.pug
+    include ../partials/body.pug
+        include ../partials/header.pug
+        main.barba-container(data-barba="container" data-barba-namespace=title)
+            h1 #{title}
+            p #{description}
+            .flex.jc-c
+                include ../partials/404SVG.pug
+
+        include ../partials/footer.pug
+    include ../partials/scripts.pug
+    

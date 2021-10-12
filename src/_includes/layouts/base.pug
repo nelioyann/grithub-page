@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+    include ../partials/head.pug
+    include ../partials/body.pug
+        include ../partials/header.pug
+        main.barba-container(data-barba="container" data-barba-namespace=title)
+            .animate-fade-up
+                h1 #{title}
+                p.margin-xl.margin-y #{description}
+            div.animate-fade-up !{content}
+            //- h2 Latest Terrible Project Ideas
+        include ../partials/footer.pug
+    include ../partials/scripts.pug
+    

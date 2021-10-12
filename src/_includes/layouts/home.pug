@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    include ../partials/head.pug
+    include ../partials/body.pug
+        include ../partials/header.pug
+        main.flex.ai-c.jc-c.barba-container(data-barba="container" data-barba-namespace=title)
+            .hero.flex.fd-c.ai-c.gap.animate-fade-up
+                .hero__content.flex.fd-c.ai-c.jc-c
+                    small.hero__upperline
+                        strong.primary (beta)
+                    h1.subheader #{meta.site_name}
+                    p.subheader__text #{meta.site_description}
+                    a.padding.borderius.bg-primary.hover-clickable(href="https://app.grithub.fr") #{meta.home_cta}
+                .hero__image.floating.animate-fade-up
+                    include ../partials/heroIMG.pug
+
+
+        include ../partials/footer.pug 
+    include ../partials/scripts.pug
+        
