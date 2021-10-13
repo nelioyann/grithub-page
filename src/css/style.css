@@ -52,8 +52,8 @@ html {
 :root {
     --color-dark: hsl(228, 19%, 11%);
     --color-dark-accent: hsl(228, 19%, 13%);
-    --color-light: hsl(223, 57%, 90%);
-    --color-light-accent: hsl(223, 57%, 93%);
+    --color-light: hsl(0, 0%, 90%);
+    --color-light-accent: hsl(0, 0%, 93%);
     --color-primary-lighter: hsl(32, 100%, 63%);
     --color-primary: hsl(32, 100%, 53%);
     --color-primary-darker: hsl(32, 100%, 50%);
