@@ -23,7 +23,7 @@ const changeUiTheme = (theme) => {
 };
 
 const getPreferedTheme = () => {
-  if (!localStorage.getItem("theme")) localStorage.setItem("theme", "dark");
+  if (!localStorage.getItem("theme")) localStorage.setItem("theme", "light");
   let preferedTheme = localStorage.getItem("theme");
   return preferedTheme;
 };
@@ -87,8 +87,8 @@ function contentAnimation() {
   var tl = gsap.timeline();
   tl.from(".animate-fade-up", {
     duration: 1,
-    y: 30,
-    opacity: 0,
+    y: 20,
+    autoAlpha: 0,
     stagger: 0.4,
     delay: 0.2,
   });
