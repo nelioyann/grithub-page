@@ -722,3 +722,9 @@ footer {
     z-index: 10;
     pointer-events: none;
 }
+
+@media (max-width: 768px) {
+.hide-under-tablet {
+        display: none;
+    }
+}
