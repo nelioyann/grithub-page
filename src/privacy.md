@@ -1,7 +1,7 @@
 ---
 layout: /layouts/base.pug
 title: Privacy Policy
-description: "TL.DR: Your data is not sold to any company or used in any way except for providing you with a good user experience. Be aware that you may loose your progression as the app is currently in beta"
+description: "TL.DR: Grithub is free and always will be. It has no ads or trackers. Be aware that you may loose your progression, without notice as the app is currently in beta."
 tags: home
 
 ---
