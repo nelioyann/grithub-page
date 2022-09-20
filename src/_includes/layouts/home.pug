@@ -11,9 +11,10 @@ html(lang="en")
                     h1.subheader  #{header}
                     p.subheader__text #{meta.site_description}
                     a.padding.borderius.bg-primary.hover-clickable.margin-l.margin-y(href="https://app.grithub.fr") #{cta}
-                //- .hero__image.floating.animate-fade-up
-                    //- include ../partials/heroIMG.pug
-                iframe.animate-fade-up.hide-under-tablet(src="https://framed.grithub.fr/", style="width: 100%; height: 900px; border: none;")
+                .hero__image.floating.animate-fade-up.hide-above-tablet
+                    include ../partials/heroIMG.pug
+                .hero__demo.animate-fade-up.hide-under-tablet.shadow.borderius
+                    iframe(src="https://framed.grithub.fr/")
 
         include ../partials/footer.pug 
     include ../partials/scripts.pug
