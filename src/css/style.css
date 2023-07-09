@@ -59,7 +59,7 @@ html {
 
 :root {
   --color-dark: hsl(228, 19%, 11%);
-  --color-dark-accent: hsl(228, 19%, 13%);
+  --color-dark-accent: hsl(228, 19%, 15%);
   --color-light: hsl(0, 0%, 90%);
   --color-light-accent: hsl(0, 0%, 93%);
   --color-primary-lighter: hsl(239, 82%, 75%);
@@ -626,9 +626,12 @@ li {
 }
 
 /* Logo */
+.icon-wrapper {
+  display: block;
+}
 .icon-wrapper img {
-  width: 5em;
-  height: 5em;
+  width: 3em;
+  height: 3em;
 }
 .icon-wrapper svg path {
   fill: var(--foreground);
